@@ -1,3 +1,5 @@
+pub mod hf;
+
 pub use gaussian_basis::*;
 
 #[cfg(test)]

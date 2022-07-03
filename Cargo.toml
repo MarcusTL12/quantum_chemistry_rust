@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 gaussian_basis = {git = "https://github.com/MarcusTL12/gaussian_basis_rust"}
 rayon = "1.5"
+ndarray = "0.15"
 
 [dev-dependencies]
 num_cpus = "1.13"
