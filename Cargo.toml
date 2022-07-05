@@ -9,7 +9,10 @@ edition = "2021"
 gaussian_basis = {git = "https://github.com/MarcusTL12/gaussian_basis_rust"}
 rayon = "1.5"
 ndarray = "0.15"
+ndarray-linalg = "0.14"
 
 [dev-dependencies]
 num_cpus = "1.13"
 clap = {version = "3.2", features = ["derive", "cargo"]}
+ndarray = "0.15"
+ndarray-linalg = { version = "0.14", features = ["openblas-system"] }
