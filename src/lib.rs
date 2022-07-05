@@ -51,7 +51,7 @@ mod tests {
     H   0.0     1.0     0.0
 ",
             ),
-            &mut get_basis("cc-pvdz"),
+            &mut get_basis("sto-3g"),
         );
 
         let mut rhf = hf::RHF::new(mol);

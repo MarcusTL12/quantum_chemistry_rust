@@ -51,7 +51,7 @@ impl RHF {
 
         println!("Initial energy: {}", last_e);
 
-        for _ in 0..MAX_ITERS {
+        for i in 0..MAX_ITERS {
             self.solve_roothan_hall_and_update_density();
 
             self.update_fock_and_energy();
@@ -63,8 +63,8 @@ impl RHF {
             last_e = e;
 
             println!(
-                "E: {:.15}, max_grad: {:.2e}, ΔE: {:+.2e}",
-                e, maxgrad, delta_e
+                "i: {} E: {:.15}, max_grad: {:.2e}, ΔE: {:+.2e}",
+                i, e, maxgrad, delta_e
             );
 
             if maxgrad < GRAD_THRESHOLD {
